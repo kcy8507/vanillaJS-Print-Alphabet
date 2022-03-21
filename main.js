@@ -6,7 +6,7 @@ function printAlphabet(x) {
   let count = "";
   alphabet.forEach((el, i) => {
     if (alphabet[0]) {
-      print[alphabet] = count++;
+      print[el] = count++;
     }
   });
   console.log(print);

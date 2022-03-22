@@ -16,18 +16,27 @@
 // }
 // printAlphabet("aabc");
 
-let alphabet = ["a", "b", "c", "a"];
-let print = {};
-let count = "";
+// let alphabet = ["a", "b", "c", "a"];
+// let print = alphabet.reduce((a, x) => {
+//   a[x] = (a[x] || 0) + 1;
+//   return a;
+// }, {});
+// console.log(print);
 
-alphabet.forEach((word, i) => {
-  // console.log(Object.keys(print), word);
-  console.log(alphabet[i]);
-  if (("a", "b", "c")) {
-    print[word] = count;
-    count++;
-  } else {
-    print[word] = count;
-  }
+function result(x) {
+  let alphabet = [...x];
+  let print = alphabet.reduce((a, x) => {
+    a[x] = (a[x] || 0) + 1;
+    return a;
+  }, {});
   console.log(print);
-});
+}
+result("abbbes");
+
+// const words = ["Beachball", "Rodeo", "Angel", "Aardvark", "Xylophone", "November", "Chocolate", "Papaya", "Uniform", "Joker", "Clover", "Bali"];
+// const alphabetical = words.reduce((a, x) => {
+//   if (!a[x[0]]) a[x[0]] = [];
+//   a[x[0]].push(x);
+//   return a;
+// }, {});
+// console.log(alphabetical);
